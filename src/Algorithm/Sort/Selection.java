@@ -10,7 +10,6 @@ public class Selection {
                     minPos = i;
                 }
             }
-
             // 将最小值与数组最前面未交换的位置进行交换
             swap(array, minPos, j);
         }
