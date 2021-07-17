@@ -1,11 +1,12 @@
 package Algorithm.Sort;
 
+// 1. 选择排序
 public class Selection {
 
     static void SelectionSort(int[] array){
-        for (int j = 0; j < array.length - 1; j++) { // 每一轮对选择出来的最小值进行交换，直至最后一个元素
+        for (int j = 0; j < array.length - 1; j++) {    // 每一轮对选择出来的最小值进行交换，直至最后一个元素
             int minPos = j; // 初始化最小值位置
-            for (int i = j + 1; i < array.length; i++) { // 从最小值后的第一个数开始进行遍历查找最小值的位置
+            for (int i = j + 1; i < array.length; i++) {    // 从最小值后的第一个数开始进行遍历查找最小值的位置
                 if (array[i] <= array[minPos]){
                     minPos = i;
                 }
